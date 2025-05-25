@@ -112,25 +112,52 @@ What you need to install the software:
 ## Project Structure
 
 ```
-.
-├── models/
-│   ├── from_scratch_model.h5       # Saved model for the "from scratch" champion guesser
-│   └── efficientnet_model.h5       # Saved model for the EfficientNet extension
-├── static/
-│   └── images/                     # Folder for uploaded images (if applicable)
-│   └── css/                        # CSS files for styling the web app
-│   └── js/                         # JavaScript files for the web app
-├── templates/
-│   └── index.html                  # Main HTML template for the web app
-│   └── result.html                 # Template for displaying prediction results
-├── data/                           # (Optional) Directory for raw/processed image data
-│   └── champion_dataset/
-├── app.py                          # Flask application main file
-├── model_creation/                 # Directory for model training scripts and notebooks
-│   ├── create_from_scratch_model.ipynb
-│   └── train_efficientnet_model.py
-├── requirements.txt                # List of Python dependencies
-└── README.md                       # This file
+What-Champion-Are-You/
+│
+├── .idea/                           # IDE configuration (optional to version control)
+├── App/                             # Web app-related code and models
+│   ├── templates/                   # HTML templates
+│   ├── __pycache__/                # Cached Python bytecode
+│   ├── app.py                       # Flask app entry point
+│   ├── baseEfficientNetB0.json      # Base model architecture (EfficientNetB0)
+│   ├── baseEfficientNetB0.weights.h5
+│   ├── heatMapWeb.py                # Web heatmap generation logic
+│   ├── load.py                      # Model loading utilities
+│   ├── makeWebModel.py              # Lightweight web model script
+│   ├── model.json                   # Alternate model architecture
+│   ├── model.weights.h5
+│   ├── modelEffcientB0.json         # EfficientNetB0 model variant
+│   ├── modelEffcientB0.weights.h5
+│   └── out.jpg                      # Sample model output image
+│
+├── Images/                          # Manually generated/test images
+│   ├── AkaliDagger.png
+│   ├── BlitzBad.png
+│   ├── BlitzGood.png
+│   └── ezrealGood.png
+│
+├── league_champs_small/            # Dataset
+│   ├── train/
+│   └── validation/
+│
+├── Models/                          # Saved trained models
+│   ├── convnet.keras
+│   ├── convnet_best_kfold.keras
+│   ├── convnet_EffcientB0.keras
+│   ├── convnet_from_scratch_with_augmentation.keras
+│   └── convnet_on_other_model.keras
+│
+├── __pycache__/                    # Cached Python bytecode
+│
+├── fineTune.py                      # Script for fine-tuning models
+├── generatePhotos.py               # Image generation and preprocessing
+├── heatMapPremade.py               # Standalone heatmap logic
+├── main.py                          # Central experiment or training script
+├── model.py                         # Model definition (e.g., CNN architecture)
+├── README.md                        # Project overview and instructions
+├── requirements.txt                 # Python dependencies
+└── subSet.py                        # Script to create dataset subsets
+
 ```
 
 ## Usage
