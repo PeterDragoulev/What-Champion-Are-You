@@ -8,9 +8,9 @@ import pathlib
 from tensorflow.keras import layers
 
 createSubSets = True
-loadPretrainedModel = True
-extendModel = True
-createNewModel = False
+loadPretrainedModel = False
+extendModel = False
+createNewModel = True
 runKfold = True
 generateVisualizations = True
 saveOriginalExtendedModel = True 
