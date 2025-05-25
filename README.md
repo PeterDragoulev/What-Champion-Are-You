@@ -114,10 +114,9 @@ What you need to install the software:
 ```
 What-Champion-Are-You/
 │
-├── .idea/                           # IDE configuration (optional to version control)
 ├── App/                             # Web app-related code and models
 │   ├── templates/                   # HTML templates
-│   ├── __pycache__/                # Cached Python bytecode
+│   ├── __pycache__/                 # Cached Python bytecode
 │   ├── app.py                       # Flask app entry point
 │   ├── baseEfficientNetB0.json      # Base model architecture (EfficientNetB0)
 │   ├── baseEfficientNetB0.weights.h5
@@ -130,13 +129,13 @@ What-Champion-Are-You/
 │   ├── modelEffcientB0.weights.h5
 │   └── out.jpg                      # Sample model output image
 │
-├── Images/                          # Manually generated/test images
+├── Images/                          # ReadMe imgaes
 │   ├── AkaliDagger.png
 │   ├── BlitzBad.png
 │   ├── BlitzGood.png
 │   └── ezrealGood.png
 │
-├── league_champs_small/            # Dataset
+├── league_champs_small/             # Dataset
 │   ├── train/
 │   └── validation/
 │
@@ -147,13 +146,13 @@ What-Champion-Are-You/
 │   ├── convnet_from_scratch_with_augmentation.keras
 │   └── convnet_on_other_model.keras
 │
-├── __pycache__/                    # Cached Python bytecode
+├── __pycache__/                     # Cached Python bytecode
 │
 ├── fineTune.py                      # Script for fine-tuning models
-├── generatePhotos.py               # Image generation and preprocessing
-├── heatMapPremade.py               # Standalone heatmap logic
-├── main.py                          # Central experiment or training script
-├── model.py                         # Model definition (e.g., CNN architecture)
+├── generatePhotos.py                # Image generation and preprocessing
+├── heatMapPremade.py                # Standalone heatmap logic
+├── main.py                          # Training script
+├── model.py                         # Model definition (CNN architecture)
 ├── README.md                        # Project overview and instructions
 ├── requirements.txt                 # Python dependencies
 └── subSet.py                        # Script to create dataset subsets
